@@ -1,9 +1,22 @@
 {
-  "keyboard_name": "mypad"
-  "manufacturer": "Adrian"
+  "keyboard_name": "onekey_rp2040",
+  "manufacturer": "Adrian",
+  "url": "",
+  "maintainer": "Adrian",
   "usb": {
-    "vid": "0x1209"
-    "pid": "0x4655"
-    "device_version": "0.0.1"
-    },
+    "vid": "0xFEED",
+    "pid": "0x0000",
+    "device_version": "1.0.0"
+  },
+  "matrix": {
+    "rows": 1,
+    "cols": 1
+  },
+  "layouts": {
+    "LAYOUT": {
+      "layout": [
+        { "label": "K00", "x": 0, "y": 0 }
+      ]
+    }
+  }
 }
