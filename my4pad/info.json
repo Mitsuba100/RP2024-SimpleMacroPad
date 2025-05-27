@@ -1,6 +1,6 @@
 {
-  "keyboard_name": "my4pad"
-  "manufacturer": "k2"
+  "keyboard_name": "mypad"
+  "manufacturer": "Adrian"
   "usb": {
     "vid": "0x1209"
     "pid": "0x4655"
