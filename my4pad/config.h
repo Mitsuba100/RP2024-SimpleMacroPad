@@ -2,24 +2,23 @@
 
 #include "config_common.h"
 
-/* key matrix size */
+/* Key matrix size */
 #define MATRIX_ROWS 1
-#define MATRIX_COLS 5
+#define MATRIX_COLS 1
 
-#define DIRECT_PINS { { GP27, GP28, GP29, GP6, GP7 } }
+/* Direct pin for the single key */
+#define DIRECT_PINS { { GP27 } }
 
-/* Rotary encoder */
-#define ENCODERS_PAD_A { GP1 }
-#define ENCODERS_PAD_B { GP2 }
-#define ENCODER_RESOLUTION 4
+/* No rotary encoder needed */
+#undef ENCODERS_PAD_A
+#undef ENCODERS_PAD_B
 
-/* COL2ROW, ROW2COL*/
+/* Diode direction (not important for single switch but required by QMK) */
 #define DIODE_DIRECTION COL2ROW
 
-/* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
+/* Debounce time */
 #define DEBOUNCE 5
 
-/* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
+/* Mechanical locking support (optional for one key) */
 #define LOCKING_SUPPORT_ENABLE
-/* Locking resynchronize hack */
 #define LOCKING_RESYNC_ENABLE
